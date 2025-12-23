@@ -37,7 +37,7 @@ body {
 
 .board h1 {
   color: #eee;
-  margin-bottom: 16px;
+  margin-bottom: 35px;
 }
 
 .board button {
@@ -67,7 +67,7 @@ body {
 .turn {
   display: flex;
   justify-content: center;
-  margin: 15px auto;
+  margin: 35px auto;
   width: fit-content;
   position: relative;
   border-radius: 10px;
