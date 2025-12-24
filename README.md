@@ -1,16 +1,70 @@
-# React + Vite
+# 🎮 Tic Tac Toe – React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Juego clásico de **Tic Tac Toe (Tres en línea)** desarrollado con **React**, enfocado en una interfaz moderna, lógica clara de juego y una experiencia de usuario sencilla e intuitiva.
 
-Currently, two official plugins are available:
+## 📸 Capturas de pantalla
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Tablero de juego
+![Tablero de Tic Tac Toe](img/start.png)
 
-## React Compiler
+### Pantalla de victoria
+![Pantalla de victoria](img/win.png)
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## 🚀 Características
 
-## Expanding the ESLint configuration
+- Interfaz moderna con tema oscuro  
+- Turnos dinámicos entre **X** y **O**  
+- Detección automática de ganador  
+- Animación de celebración al ganar  
+- Botón para reiniciar la partida  
+- Código simple y fácil de entender  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologías utilizadas
+
+- **React**
+- **JavaScript (ES6+)**
+- **HTML5**
+- **CSS3**
+
+## 📦 Instalación y ejecución
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/DeathbatO13/Tic-Tac-Toe-con-React.git
+   ```
+
+2. Entra al proyecto:
+    ```bash
+    cd Tic-Tac-Toe-con-React
+    ```
+
+3. Instala las dependencias:
+    ```bash
+    npm install
+    ```
+4. Ejecuta la aplicación:
+    ```bash
+    npm start
+    ```
+
+## 📁 Estructura del proyecto
+
+    ├── src
+    │   ├── components
+    │   ├── App.js
+    │   └── index.js
+    ├── img
+    │   ├── board.png
+    │   └── win.png
+    └── README.md
+
+## 🎯 Objetivo del proyecto
+
+Proyecto práctico para reforzar conceptos de:
+
+- Manejo de estado en React
+- Renderizado condicional
+- Componentes reutilizables
+- Lógica básica de juegos
+
+
