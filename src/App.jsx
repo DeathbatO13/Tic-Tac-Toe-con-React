@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, use } from 'react'
 import confetti from 'canvas-confetti'
 
 import { Square } from './components/Square.jsx'
@@ -43,9 +43,6 @@ function App() {
     const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X
     setTurn(newTurn)
 
-    window.localStorage.setItem('board', JSON.stringify(newBoard))
-    window.localStorage.setItem('turn', newTurn)
-
     const newWinner = checkWinnerFrom(newBoard)
     if (newWinner) {
       confetti({
@@ -58,6 +55,14 @@ function App() {
       setWinner(false)
     }
   }
+
+  useEffect(() => {
+
+    window.localStorage.setItem('board', JSON.stringify(board))
+    window.localStorage.setItem('turn', turn)
+    console.log('Board and turn saved to localStorage')
+
+  }, [turn, board])
 
   return (
     <main className='board'>
